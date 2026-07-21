@@ -1,5 +1,6 @@
 /* ==================================================
    XPLOR WEBSITE INTERACTIONS
+   FULL MOBILE-SAFE VERSION
 ================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -9,22 +10,27 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobileMenu = document.getElementById("mobileMenu");
 
     const phoneScene = document.getElementById("phoneScene");
-
     const phoneLeft = document.querySelector(".phone-left");
     const phoneCentre = document.querySelector(".phone-centre");
     const phoneRight = document.querySelector(".phone-right");
 
+    const isMobile = window.matchMedia("(max-width: 760px)").matches;
+
+    const prefersReducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+    ).matches;
+
 
     /* ==================================================
-       NAVIGATION BACKGROUND
+       HEADER
     =================================================== */
 
     function updateHeader() {
-        if (window.scrollY > 30) {
-            siteHeader.classList.add("scrolled");
-        } else {
-            siteHeader.classList.remove("scrolled");
+        if (!siteHeader) {
+            return;
         }
+
+        siteHeader.classList.toggle("scrolled", window.scrollY > 30);
     }
 
     updateHeader();
@@ -38,38 +44,77 @@ document.addEventListener("DOMContentLoaded", () => {
        MOBILE MENU
     =================================================== */
 
-    menuButton.addEventListener("click", () => {
+    if (menuButton && mobileMenu) {
 
-        const menuIsOpen = mobileMenu.classList.toggle("active");
+        menuButton.addEventListener("click", () => {
 
-        menuButton.classList.toggle("active", menuIsOpen);
-        document.body.classList.toggle("menu-open", menuIsOpen);
+            const menuIsOpen = mobileMenu.classList.toggle("active");
 
-        menuButton.setAttribute(
-            "aria-expanded",
-            menuIsOpen.toString()
-        );
+            menuButton.classList.toggle("active", menuIsOpen);
+            document.body.classList.toggle("menu-open", menuIsOpen);
 
-    });
-
-
-    mobileMenu.querySelectorAll("a").forEach((link) => {
-
-        link.addEventListener("click", () => {
-
-            mobileMenu.classList.remove("active");
-            menuButton.classList.remove("active");
-            document.body.classList.remove("menu-open");
-
-            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute(
+                "aria-expanded",
+                menuIsOpen.toString()
+            );
 
         });
 
-    });
+
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+
+            link.addEventListener("click", () => {
+
+                mobileMenu.classList.remove("active");
+                menuButton.classList.remove("active");
+                document.body.classList.remove("menu-open");
+
+                menuButton.setAttribute("aria-expanded", "false");
+
+            });
+
+        });
+
+    }
 
 
     /* ==================================================
-       HERO OPENING ANIMATION
+       MOBILE
+
+       Do not run the GSAP opening animation on mobile.
+       Everything appears immediately in the correct place.
+    =================================================== */
+
+    if (isMobile || prefersReducedMotion || typeof gsap === "undefined") {
+
+        const mobileElements = document.querySelectorAll(
+            `
+            .site-header,
+            .eyebrow,
+            .hero h1 span,
+            .hero-description,
+            .hero-actions,
+            .hero-stats > div,
+            .phone-left,
+            .phone-centre,
+            .phone-right,
+            .scroll-indicator
+            `
+        );
+
+        mobileElements.forEach((element) => {
+
+            element.style.opacity = "1";
+            element.style.visibility = "visible";
+
+        });
+
+        return;
+    }
+
+
+    /* ==================================================
+       DESKTOP OPENING ANIMATION
     =================================================== */
 
     const openingAnimation = gsap.timeline({
@@ -144,19 +189,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* ==================================================
-       PHONE MOUSE MOVEMENT
+       DESKTOP PHONE MOVEMENT
     =================================================== */
 
-    const prefersReducedMotion = window.matchMedia(
-        "(prefers-reduced-motion: reduce)"
-    ).matches;
-
-
-    if (
-        phoneScene &&
-        !prefersReducedMotion &&
-        window.innerWidth > 900
-    ) {
+    if (phoneScene && phoneLeft && phoneCentre && phoneRight) {
 
         phoneScene.addEventListener("mousemove", (event) => {
 
@@ -213,9 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* ==================================================
-       SCROLL MOVEMENT
-
-       As the visitor scrolls, the three phones separate.
+       DESKTOP SCROLL EFFECT
     =================================================== */
 
     let ticking = false;
@@ -223,60 +257,62 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function updateHeroScroll() {
 
-        const scrollAmount = window.scrollY;
-        const heroHeight = window.innerHeight;
-
         const progress = Math.min(
-            Math.max(scrollAmount / heroHeight, 0),
+            Math.max(window.scrollY / window.innerHeight, 0),
             1
         );
 
 
-        if (
-            window.innerWidth > 900 &&
-            !prefersReducedMotion
-        ) {
+        if (phoneLeft) {
 
             gsap.set(phoneLeft, {
                 marginLeft: -55 * progress,
                 rotationZ: -8 - 5 * progress
             });
 
+        }
+
+
+        if (phoneCentre) {
 
             gsap.set(phoneCentre, {
                 marginTop: -40 * progress,
                 scale: 1 + 0.05 * progress
             });
 
+        }
+
+
+        if (phoneRight) {
 
             gsap.set(phoneRight, {
                 marginLeft: 55 * progress,
                 rotationZ: 8 + 5 * progress
             });
 
-
-            gsap.set(".hero-copy", {
-                y: -55 * progress,
-                opacity: 1 - progress * 0.45
-            });
-
-
-            gsap.set(".hero-background", {
-                y: 90 * progress,
-                scale: 1.06 + progress * 0.04
-            });
-
-
-            gsap.set(".fog-one", {
-                x: 140 * progress
-            });
-
-
-            gsap.set(".fog-two", {
-                x: -110 * progress
-            });
-
         }
+
+
+        gsap.set(".hero-copy", {
+            y: -55 * progress,
+            opacity: 1 - progress * 0.45
+        });
+
+
+        gsap.set(".hero-background", {
+            y: 90 * progress,
+            scale: 1.06 + progress * 0.04
+        });
+
+
+        gsap.set(".fog-one", {
+            x: 140 * progress
+        });
+
+
+        gsap.set(".fog-two", {
+            x: -110 * progress
+        });
 
 
         ticking = false;
@@ -290,8 +326,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!ticking) {
 
                 window.requestAnimationFrame(updateHeroScroll);
-
                 ticking = true;
+
             }
 
         },
@@ -302,7 +338,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* ==================================================
-       BUTTON MAGNET EFFECT
+       DESKTOP BUTTON EFFECT
     =================================================== */
 
     const magneticButton = document.querySelector(
@@ -310,11 +346,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 
-    if (
-        magneticButton &&
-        !prefersReducedMotion &&
-        window.innerWidth > 900
-    ) {
+    if (magneticButton) {
 
         magneticButton.addEventListener(
             "mousemove",
