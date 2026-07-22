@@ -1,139 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
     <meta
         name="viewport"
-        content="width=device-width, initial-scale=1.0"
+        content="width=device-width, initial-scale=1, viewport-fit=cover"
     >
 
     <meta
         name="description"
-        content="XPLOR is the premium UK adventure app for discovering and tracking summits, waterfalls, caves, scrambles, wild camps and more."
+        content="XPLOR — Discover, track and complete the UK's greatest outdoor adventures."
     >
 
-    <title>XPLOR | The UK. Your Adventure. One App.</title>
+    <title>XPLOR — Discover More</title>
 
-    <!-- Website styling -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet"
     >
+
+    <link rel="stylesheet" href="css/style.css?v=20">
 </head>
 
 <body>
 
-    <!-- ==================================================
-         NAVIGATION
-    =================================================== -->
+    <!-- HEADER -->
 
     <header class="site-header" id="siteHeader">
-        <nav class="navbar container">
 
-            <a href="#home" class="brand" aria-label="XPLOR home">
-                <span class="brand-mark">X</span>
-                <span class="brand-name">XPLOR</span>
+        <div class="nav-container">
+
+            <a href="#top" class="brand" aria-label="XPLOR home">
+
+                <span class="brand-icon">X</span>
+
+                <span class="brand-word">XPLOR</span>
+
             </a>
 
-            <div class="desktop-nav">
-                <a href="#discover">Discover</a>
-                <a href="#features">Features</a>
-                <a href="#community">Community</a>
-                <a href="#plus">XPLOR Plus</a>
-            </div>
+            <nav class="desktop-navigation">
 
-            <a href="#download" class="nav-button">
+                <a href="#discover">Discover</a>
+
+                <a href="#features">Features</a>
+
+                <a href="#community">Community</a>
+
+                <a href="#download">Download</a>
+
+            </nav>
+
+            <a href="#download" class="header-button">
                 Get XPLOR
             </a>
 
             <button
                 class="menu-button"
                 id="menuButton"
-                aria-label="Open navigation menu"
+                type="button"
+                aria-label="Open menu"
                 aria-expanded="false"
             >
+
                 <span></span>
                 <span></span>
+
             </button>
 
-        </nav>
-
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="#discover">Discover</a>
-            <a href="#features">Features</a>
-            <a href="#community">Community</a>
-            <a href="#plus">XPLOR Plus</a>
-            <a href="#download">Get XPLOR</a>
         </div>
+
     </header>
 
 
-    <main>
+    <!-- MOBILE MENU -->
 
-        <!-- ==================================================
-             CINEMATIC HERO
-        =================================================== -->
+    <div class="mobile-menu" id="mobileMenu">
 
-        <section class="hero" id="home">
+        <a href="#discover">Discover</a>
+
+        <a href="#features">Features</a>
+
+        <a href="#community">Community</a>
+
+        <a href="#download">Download</a>
+
+    </div>
+
+
+    <!-- HERO -->
+
+    <main id="top">
+
+        <section class="hero">
 
             <div class="hero-background"></div>
-            <div class="hero-sun"></div>
-            <div class="hero-glow"></div>
-            <div class="hero-vignette"></div>
 
-            <div class="fog fog-one"></div>
-            <div class="fog fog-two"></div>
+            <div class="hero-light hero-light-one"></div>
 
-            <div class="particles" aria-hidden="true">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <div class="hero-light hero-light-two"></div>
 
-            <div class="hero-content container">
+            <div class="mountain mountain-back"></div>
+
+            <div class="mountain mountain-front"></div>
+
+            <div class="particle particle-one"></div>
+
+            <div class="particle particle-two"></div>
+
+            <div class="particle particle-three"></div>
+
+            <div class="particle particle-four"></div>
+
+            <div class="hero-inner">
 
                 <div class="hero-copy">
 
-                    <p class="eyebrow">
-                        THE HOME OF UK EXPLORATION
+                    <p class="hero-label">
+                        THE UK’S OUTDOOR ADVENTURE PLATFORM
                     </p>
 
                     <h1>
-                        <span>THE UK.</span>
-                        <span>YOUR ADVENTURE.</span>
-                        <span class="accent-line">ONE APP.</span>
+                        Find more.
+                        <span>Go further.</span>
                     </h1>
 
                     <p class="hero-description">
-                        Discover more. Track everything. Build a complete
-                        record of every summit, waterfall, cave, scramble
-                        and wild adventure.
+                        Discover hidden summits, waterfalls, caves,
+                        scrambles and unforgettable places across the UK.
+                        Track every adventure and build your own exploration story.
                     </p>
 
-                    <div class="hero-actions">
+                    <div class="hero-buttons">
 
-                        <a href="#download" class="primary-button">
-                            <span class="button-glow"></span>
+                        <a href="#download" class="main-button">
 
-                            <span class="button-content">
-                                Download XPLOR
-                                <span class="button-arrow">↗</span>
-                            </span>
+                            <span>Explore XPLOR</span>
+
+                            <span class="button-arrow">↗</span>
+
                         </a>
 
-                        <a href="#discover" class="text-button">
-                            Explore the app
+                        <a href="#discover" class="secondary-button">
+
+                            Discover the app
+
                             <span>↓</span>
+
                         </a>
 
                     </div>
@@ -141,17 +159,17 @@
                     <div class="hero-stats">
 
                         <div>
-                            <strong>500M+</strong>
-                            <span>Summits</span>
+                            <strong>500+</strong>
+                            <span>UK summits</span>
                         </div>
 
                         <div>
-                            <strong>UK WIDE</strong>
-                            <span>Exploration</span>
+                            <strong>100s</strong>
+                            <span>Hidden places</span>
                         </div>
 
                         <div>
-                            <strong>ONE LOG</strong>
+                            <strong>One app</strong>
                             <span>Every adventure</span>
                         </div>
 
@@ -160,64 +178,97 @@
                 </div>
 
 
-                <!-- Floating phone scene -->
+                <!-- PHONE DISPLAY -->
 
-                <div class="phone-scene" id="phoneScene">
+                <div class="phone-display">
 
-                    <div class="phone-shadow"></div>
+                    <div class="phone phone-left">
 
-                    <article class="phone phone-left">
                         <div class="phone-frame">
-                            <div class="phone-speaker"></div>
+
+                            <div class="dynamic-island"></div>
 
                             <div class="phone-screen map-screen">
-                                <div class="screen-top">
+
+                                <div class="app-header">
+
                                     <span>XPLOR</span>
+
                                     <span>•••</span>
+
                                 </div>
 
-                                <div class="map-lines"></div>
+                                <div class="map-path path-one"></div>
 
-                                <span class="map-pin pin-one"></span>
-                                <span class="map-pin pin-two"></span>
-                                <span class="map-pin pin-three"></span>
+                                <div class="map-path path-two"></div>
 
-                                <div class="screen-card">
-                                    <small>NEARBY</small>
-                                    <strong>Explore the UK</strong>
-                                    <span>Summits · Caves · Waterfalls</span>
+                                <div class="map-marker marker-one"></div>
+
+                                <div class="map-marker marker-two"></div>
+
+                                <div class="map-marker marker-three"></div>
+
+                                <div class="location-card">
+
+                                    <small>NEARBY ADVENTURE</small>
+
+                                    <strong>Scafell Pike</strong>
+
+                                    <span>978m · Lake District</span>
+
                                 </div>
+
                             </div>
+
                         </div>
-                    </article>
+
+                    </div>
 
 
-                    <article class="phone phone-centre">
+                    <div class="phone phone-centre">
+
                         <div class="phone-frame">
-                            <div class="phone-speaker"></div>
+
+                            <div class="dynamic-island"></div>
 
                             <div class="phone-screen progress-screen">
-                                <div class="screen-top">
+
+                                <div class="app-header">
+
                                     <span>MY XPLOR</span>
-                                    <span>◎</span>
+
+                                    <span>•••</span>
+
                                 </div>
 
-                                <div class="progress-hero">
-                                    <small>YOUR UK PROGRESS</small>
-                                    <strong>28%</strong>
-                                    <span>Keep exploring</span>
-                                </div>
+                                <p class="progress-label">
+                                    UK EXPLORATION
+                                </p>
 
-                                <div class="progress-ring">
-                                    <div class="progress-ring-inner">
-                                        <span>142</span>
-                                        <small>FOUND</small>
+                                <strong class="progress-number">
+                                    28%
+                                </strong>
+
+                                <span class="progress-change">
+                                    +4.2% this month
+                                </span>
+
+                                <div class="progress-circle">
+
+                                    <div class="progress-circle-inner">
+
+                                        <strong>142</strong>
+
+                                        <span>COMPLETED</span>
+
                                     </div>
+
                                 </div>
 
-                                <div class="mini-stat-grid">
+                                <div class="progress-grid">
+
                                     <div>
-                                        <strong>54</strong>
+                                        <strong>36</strong>
                                         <span>Summits</span>
                                     </div>
 
@@ -227,100 +278,177 @@
                                     </div>
 
                                     <div>
-                                        <strong>11</strong>
+                                        <strong>12</strong>
                                         <span>Caves</span>
                                     </div>
 
                                     <div>
-                                        <strong>7</strong>
+                                        <strong>8</strong>
                                         <span>Scrambles</span>
                                     </div>
+
                                 </div>
+
                             </div>
+
                         </div>
-                    </article>
+
+                    </div>
 
 
-                    <article class="phone phone-right">
+                    <div class="phone phone-right">
+
                         <div class="phone-frame">
-                            <div class="phone-speaker"></div>
+
+                            <div class="dynamic-island"></div>
 
                             <div class="phone-screen profile-screen">
-                                <div class="screen-top">
+
+                                <div class="app-header">
+
                                     <span>PROFILE</span>
+
                                     <span>⚙</span>
+
                                 </div>
 
                                 <div class="profile-avatar">
-                                    <span>X</span>
+                                    X
                                 </div>
 
-                                <strong class="profile-name">Explorer</strong>
-                                <span class="profile-level">LEVEL 12</span>
+                                <strong class="profile-name">
+                                    HARRY HEWITT
+                                </strong>
 
-                                <div class="xp-bar">
+                                <span class="profile-rank">
+                                    SUMMIT SEEKER
+                                </span>
+
+                                <div class="xp-track">
                                     <span></span>
                                 </div>
 
-                                <div class="achievement-card">
-                                    <small>NEW ACHIEVEMENT</small>
-                                    <strong>Peak Hunter</strong>
-                                    <span>Complete 25 summits</span>
+                                <div class="achievement">
+
+                                    <small>LATEST ACHIEVEMENT</small>
+
+                                    <strong>Mountain Hunter</strong>
+
+                                    <span>
+                                        Completed 25 UK summits
+                                    </span>
+
                                 </div>
 
-                                <div class="profile-numbers">
+                                <div class="profile-grid">
+
                                     <div>
-                                        <strong>142</strong>
-                                        <span>Adventures</span>
+                                        <strong>2,480</strong>
+                                        <span>XP</span>
                                     </div>
 
                                     <div>
-                                        <strong>31</strong>
+                                        <strong>14</strong>
                                         <span>Badges</span>
                                     </div>
+
                                 </div>
+
                             </div>
+
                         </div>
-                    </article>
+
+                    </div>
+
+                    <div class="phone-floor-shadow"></div>
 
                 </div>
 
             </div>
 
+            <a href="#discover" class="scroll-prompt">
 
-            <div class="scroll-indicator">
-                <span>SCROLL TO EXPLORE</span>
-                <div class="scroll-line"></div>
+                <span>SCROLL TO XPLOR</span>
+
+                <i></i>
+
+            </a>
+
+        </section>
+
+
+        <!-- SECOND SECTION -->
+
+        <section class="discover-section" id="discover">
+
+            <div class="section-inner">
+
+                <p class="section-label">
+                    BUILT FOR EXPLORERS
+                </p>
+
+                <h2>
+                    Discover what
+                    <span>others miss.</span>
+                </h2>
+
+                <p class="section-description">
+                    XPLOR brings together the UK’s greatest mountains,
+                    waterfalls, caves, routes and hidden outdoor locations
+                    inside one premium adventure platform.
+                </p>
+
             </div>
 
         </section>
 
 
-        <!-- Temporary dark area so scrolling can be tested -->
+        <!-- PLACEHOLDER SECTIONS -->
 
-        <section class="next-section" id="discover">
+        <section class="placeholder-section" id="features">
 
-            <p class="eyebrow">THIS IS ONLY THE BEGINNING</p>
+            <p class="section-label">TRACK EVERYTHING</p>
 
             <h2>
-                DISCOVER WHAT<br>
-                OTHERS MISS.
+                Your adventures.
+                <span>Your progress.</span>
             </h2>
 
-            <p>
-                The next section will reveal the complete world of XPLOR.
-            </p>
+        </section>
+
+        <section class="placeholder-section" id="community">
+
+            <p class="section-label">THE XPLOR COMMUNITY</p>
+
+            <h2>
+                Explore together.
+                <span>Go further.</span>
+            </h2>
+
+        </section>
+
+        <section class="download-section" id="download">
+
+            <p class="section-label">COMING TO iPHONE</p>
+
+            <h2>
+                The UK is waiting.
+            </h2>
+
+            <a href="#top" class="main-button">
+
+                <span>Join XPLOR</span>
+
+                <span class="button-arrow">↗</span>
+
+            </a>
 
         </section>
 
     </main>
 
-
-    <!-- GSAP animation library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
-    <!-- Our website JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=20"></script>
 
 </body>
+
 </html>
