@@ -1,2076 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#020503">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, viewport-fit=cover"
-    >
+  <title>XPLOR — UK Adventure, Summit & Hiking Tracker</title>
+  <meta name="description" content="Discover UK summits, waterfalls, caves, scrambles and wild camping locations. Tick off adventures, track progress and compare with friends using XPLOR.">
+  <meta name="keywords" content="UK hiking app, summit tracker UK, mountain checklist, wild camping tracker, cave finder UK, waterfall finder UK, hiking with friends">
 
-    <meta
-        name="theme-color"
-        content="#020503"
-    >
+  <meta property="og:title" content="XPLOR — Find More. Go Further.">
+  <meta property="og:description" content="One place to discover, complete and compare the UK's best outdoor adventures.">
+  <meta property="og:type" content="website">
 
-    <meta
-        name="description"
-        content="XPLOR — Discover, track and complete the UK's greatest outdoor adventures."
-    >
-
-    <title>XPLOR — Discover More</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet"
-    >
-
-    <link
-        rel="stylesheet"
-        href="css/style.css?v=30"
-    >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=40">
 </head>
-
 <body>
+  <header class="site-header" id="siteHeader">
+    <div class="nav-wrap">
+      <a href="#top" class="brand" aria-label="XPLOR home">
+        <span class="brand-mark">X</span>
+        <span class="brand-name">XPLOR</span>
+      </a>
 
-    <!-- ==================================================
-         HEADER
-    =================================================== -->
+      <nav class="desktop-nav">
+        <a href="#discover">Discover</a>
+        <a href="#features">Features</a>
+        <a href="#story">Our Story</a>
+        <a href="#progress">Progress</a>
+        <a href="#community">Community</a>
+      </nav>
 
-    <header
-        class="site-header"
-        id="siteHeader"
-    >
+      <a href="#download" class="nav-cta">Get XPLOR</a>
 
-        <div class="nav-container">
+      <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
 
-            <a
-                href="#top"
-                class="brand"
-                aria-label="XPLOR home"
-            >
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#discover">Discover</a>
+    <a href="#features">Features</a>
+    <a href="#story">Our Story</a>
+    <a href="#progress">Progress</a>
+    <a href="#community">Community</a>
+    <a href="#download" class="mobile-menu-cta">Get XPLOR</a>
+  </div>
 
-                <span class="brand-icon">
-                    X
-                </span>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-contours"></div>
+      <div class="hero-glow hero-glow-green"></div>
+      <div class="hero-glow hero-glow-gold"></div>
+      <div class="mountain mountain-back"></div>
+      <div class="mountain mountain-front"></div>
 
-                <span class="brand-word">
-                    XPLOR
-                </span>
+      <span class="particle p1"></span>
+      <span class="particle p2"></span>
+      <span class="particle p3"></span>
+      <span class="particle p4"></span>
+      <span class="particle p5"></span>
 
+      <div class="hero-wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">THE UK'S OUTDOOR ADVENTURE PLATFORM</p>
+          <h1>
+            Find more.
+            <span>Go further.</span>
+          </h1>
+          <p class="hero-text">
+            See the UK's summits, waterfalls, caves, scrambles and wild places in one place.
+            Tick off every location, track where you've explored and compare progress with your friends.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#discover" class="primary-btn magnetic">
+              <span>Explore XPLOR</span>
+              <b>↗</b>
             </a>
+            <a href="#story" class="ghost-link">How it started <span>↓</span></a>
+          </div>
 
-
-            <nav
-                class="desktop-navigation"
-                aria-label="Main navigation"
-            >
-
-                <a href="#discover">
-                    Discover
-                </a>
-
-                <a href="#features">
-                    Features
-                </a>
-
-                <a href="#progress">
-                    Progress
-                </a>
-
-                <a href="#community">
-                    Community
-                </a>
-
-            </nav>
-
-
-            <a
-                href="#download"
-                class="header-button"
-            >
-                Get XPLOR
-            </a>
-
-
-            <button
-                class="menu-button"
-                id="menuButton"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-            >
-
-                <span></span>
-                <span></span>
-
-            </button>
-
+          <div class="hero-stats">
+            <div><strong>One map</strong><span>Every location</span></div>
+            <div><strong>Your list</strong><span>Tick it off</span></div>
+            <div><strong>Your crew</strong><span>Compare progress</span></div>
+          </div>
         </div>
 
-    </header>
-
-
-    <!-- ==================================================
-         MOBILE MENU
-    =================================================== -->
-
-    <div
-        class="mobile-menu"
-        id="mobileMenu"
-    >
-
-        <a href="#discover">
-            Discover
-        </a>
-
-        <a href="#features">
-            Features
-        </a>
-
-        <a href="#progress">
-            Progress
-        </a>
-
-        <a href="#community">
-            Community
-        </a>
-
-        <a
-            href="#download"
-            class="mobile-menu-download"
-        >
-            Get XPLOR
-        </a>
-
-    </div>
-
-
-    <main id="top">
-
-
-        <!-- ==================================================
-             HERO
-        =================================================== -->
-
-        <section class="hero">
-
-            <div class="hero-background"></div>
-
-            <div class="hero-grid"></div>
-
-            <div class="hero-light hero-light-gold"></div>
-
-            <div class="hero-light hero-light-green"></div>
-
-            <div class="hero-mountain hero-mountain-back"></div>
-
-            <div class="hero-mountain hero-mountain-front"></div>
-
-            <div class="hero-noise"></div>
-
-
-            <span class="hero-particle particle-one"></span>
-
-            <span class="hero-particle particle-two"></span>
-
-            <span class="hero-particle particle-three"></span>
-
-            <span class="hero-particle particle-four"></span>
-
-            <span class="hero-particle particle-five"></span>
-
-
-            <div class="hero-inner">
-
-                <!-- HERO COPY -->
-
-                <div class="hero-copy">
-
-                    <p class="hero-eyebrow">
-                        THE UK’S OUTDOOR ADVENTURE PLATFORM
-                    </p>
-
-                    <h1 class="hero-title">
-
-                        <span class="hero-title-line">
-                            Find more.
-                        </span>
-
-                        <span class="hero-title-line hero-title-accent">
-                            Go further.
-                        </span>
-
-                    </h1>
-
-                    <p class="hero-description">
-                        Discover summits, waterfalls, caves, scrambles,
-                        wild places and unforgettable routes across the UK.
-                        Track every adventure and build your own exploration story.
-                    </p>
-
-
-                    <div class="hero-actions">
-
-                        <a
-                            href="#discover"
-                            class="primary-button magnetic-button"
-                        >
-
-                            <span class="primary-button-shine"></span>
-
-                            <span class="primary-button-content">
-
-                                Explore XPLOR
-
-                                <span class="button-arrow">
-                                    ↗
-                                </span>
-
-                            </span>
-
-                        </a>
-
-
-                        <a
-                            href="#features"
-                            class="text-button"
-                        >
-
-                            Discover the app
-
-                            <span>
-                                ↓
-                            </span>
-
-                        </a>
-
-                    </div>
-
-
-                    <div class="hero-stats">
-
-                        <div class="hero-stat">
-
-                            <strong>
-                                500+
-                            </strong>
-
-                            <span>
-                                UK summits
-                            </span>
-
-                        </div>
-
-
-                        <div class="hero-stat">
-
-                            <strong>
-                                100s
-                            </strong>
-
-                            <span>
-                                Hidden places
-                            </span>
-
-                        </div>
-
-
-                        <div class="hero-stat">
-
-                            <strong>
-                                One app
-                            </strong>
-
-                            <span>
-                                Every adventure
-                            </span>
-
-                        </div>
-
-                    </div>
-
+        <div class="phone-stage" id="phoneStage">
+          <div class="phone-aura"></div>
+          <div class="phone-shadow"></div>
+
+          <article class="phone phone-left">
+            <div class="phone-shell">
+              <div class="island"></div>
+              <div class="screen map-screen">
+                <div class="status"><span>10:27</span><span>● ◒ 78</span></div>
+                <div class="screen-logo">▲ <strong>XPLOR</strong></div>
+
+                <div class="map-filters">
+                  <span>◇ All Regions⌄</span>
+                  <span>✦ All⌄</span>
                 </div>
 
-
-                <!-- ==================================================
-                     HERO PHONE DISPLAY
-                =================================================== -->
-
-                <div
-                    class="phone-stage"
-                    id="phoneStage"
-                >
-
-                    <div class="phone-aura"></div>
-
-                    <div class="phone-ground-shadow"></div>
-
-
-                    <!-- LEFT PHONE — MAP -->
-
-                    <article class="phone phone-left">
-
-                        <div class="phone-body">
-
-                            <div class="phone-side-button phone-side-button-one"></div>
-
-                            <div class="phone-side-button phone-side-button-two"></div>
-
-                            <div class="dynamic-island"></div>
-
-
-                            <div class="phone-screen map-app-screen">
-
-                                <div class="app-status-bar">
-
-                                    <span>
-                                        10:27
-                                    </span>
-
-                                    <span class="status-icons">
-                                        ● ◒ 78
-                                    </span>
-
-                                </div>
-
-
-                                <div class="map-app-logo">
-
-                                    <span class="mini-mountain">
-                                        ▲
-                                    </span>
-
-                                    <strong>
-                                        XPLOR
-                                    </strong>
-
-                                </div>
-
-
-                                <div class="map-controls-row">
-
-                                    <div class="map-filter">
-
-                                        <span class="map-filter-icon">
-                                            ◇
-                                        </span>
-
-                                        All Regions
-
-                                        <span>
-                                           ⌄
-                                        </span>
-
-                                    </div>
-
-
-                                    <div class="map-filter map-filter-small">
-
-                                        <span class="map-filter-icon">
-                                            ✦
-                                        </span>
-
-                                        All
-
-                                        <span>
-                                            ⌄
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="map-count-row">
-
-                                    <div class="map-count map-count-active">
-
-                                        <strong>
-                                            108
-                                        </strong>
-
-                                        <span>
-                                            Found
-                                        </span>
-
-                                    </div>
-
-
-                                    <div class="map-count">
-
-                                        <strong>
-                                            1
-                                        </strong>
-
-                                        <span>
-                                            Done
-                                        </span>
-
-                                    </div>
-
-
-                                    <div class="map-count">
-
-                                        <strong>
-                                            0
-                                        </strong>
-
-                                        <span>
-                                            Saved
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="fake-map">
-
-                                    <div class="map-land map-land-one"></div>
-
-                                    <div class="map-land map-land-two"></div>
-
-                                    <div class="map-land map-land-three"></div>
-
-                                    <div class="map-road map-road-one"></div>
-
-                                    <div class="map-road map-road-two"></div>
-
-
-                                    <div class="map-pin map-pin-one">
-
-                                        <span>
-                                            +9
-                                        </span>
-
-                                    </div>
-
-
-                                    <div class="map-pin map-pin-two">
-
-                                        <span>
-                                            +3
-                                        </span>
-
-                                    </div>
-
-
-                                    <div class="map-pin map-pin-three map-pin-water">
-
-                                        <span>
-                                            ●
-                                        </span>
-
-                                    </div>
-
-
-                                    <div class="map-pin map-pin-four">
-
-                                        <span>
-                                            +12
-                                        </span>
-
-                                    </div>
-
-
-                                    <div class="map-location-label map-label-one">
-                                        Scotland
-                                    </div>
-
-                                    <div class="map-location-label map-label-two">
-                                        Wales
-                                    </div>
-
-                                </div>
-
-
-                                <div class="map-bottom-card">
-
-                                    <div class="map-bottom-card-copy">
-
-                                        <small>
-                                            NEXT MISSION
-                                        </small>
-
-                                        <strong>
-                                            Yr Wyddfa
-                                        </strong>
-
-                                    </div>
-
-                                    <span class="map-height">
-                                        1,085m
-                                    </span>
-
-                                </div>
-
-
-                                <div class="fake-tab-bar">
-
-                                    <span class="tab-active">
-                                        Map
-                                    </span>
-
-                                    <span>
-                                        My List
-                                    </span>
-
-                                    <span>
-                                        Feed
-                                    </span>
-
-                                    <span>
-                                        Friends
-                                    </span>
-
-                                    <span>
-                                        Profile
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- CENTRE PHONE — MY LIST -->
-
-                    <article class="phone phone-centre">
-
-                        <div class="phone-body">
-
-                            <div class="phone-side-button phone-side-button-one"></div>
-
-                            <div class="phone-side-button phone-side-button-two"></div>
-
-                            <div class="dynamic-island"></div>
-
-
-                            <div class="phone-screen list-app-screen">
-
-                                <div class="app-status-bar">
-
-                                    <span>
-                                        10:26
-                                    </span>
-
-                                    <span class="status-icons">
-                                        ● ◒ 79
-                                    </span>
-
-                                </div>
-
-
-                                <div class="list-app-header">
-
-                                    <div class="list-app-logo">
-
-                                        <span class="mini-mountain">
-                                            ▲
-                                        </span>
-
-                                        <strong>
-                                            XPLOR
-                                        </strong>
-
-                                    </div>
-
-
-                                    <div class="list-header-actions">
-
-                                        <span>
-                                            ⌕
-                                        </span>
-
-                                        <span>
-                                            ☷
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="list-hero-card">
-
-                                    <div class="list-hero-overlay"></div>
-
-                                    <div class="list-hero-content">
-
-                                        <p class="list-card-label">
-                                            MY LIST
-                                        </p>
-
-                                        <strong class="list-card-title">
-                                            28%
-                                        </strong>
-
-                                        <span class="list-card-subtitle">
-                                            UK explored
-                                        </span>
-
-
-                                        <div class="list-progress-ring">
-
-                                            <div class="list-progress-inner">
-
-                                                <strong>
-                                                    28%
-                                                </strong>
-
-                                                <span>
-                                                    Progress
-                                                </span>
-
-                                            </div>
-
-                                        </div>
-
-
-                                        <div class="list-stat-grid">
-
-                                            <div>
-
-                                                <span class="list-stat-icon green">
-                                                    ✓
-                                                </span>
-
-                                                <strong>
-                                                    36
-                                                </strong>
-
-                                                <small>
-                                                    Done
-                                                </small>
-
-                                            </div>
-
-
-                                            <div>
-
-                                                <span class="list-stat-icon blue">
-                                                    ◫
-                                                </span>
-
-                                                <strong>
-                                                    8
-                                                </strong>
-
-                                                <small>
-                                                    Planned
-                                                </small>
-
-                                            </div>
-
-
-                                            <div>
-
-                                                <span class="list-stat-icon gold">
-                                                    ◆
-                                                </span>
-
-                                                <strong>
-                                                    14
-                                                </strong>
-
-                                                <small>
-                                                    Saved
-                                                </small>
-
-                                            </div>
-
-
-                                            <div>
-
-                                                <span class="list-stat-icon purple">
-                                                    ◉
-                                                </span>
-
-                                                <strong>
-                                                    5
-                                                </strong>
-
-                                                <small>
-                                                    Regions
-                                                </small>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="rank-grid">
-
-                                    <div class="rank-card rank-card-gold">
-
-                                        <span class="rank-icon">
-                                            ✦
-                                        </span>
-
-                                        <div>
-
-                                            <small>
-                                                EXPLORER SCORE
-                                            </small>
-
-                                            <strong>
-                                                62
-                                            </strong>
-
-                                            <span>
-                                                Explorer
-                                            </span>
-
-                                        </div>
-
-                                    </div>
-
-
-                                    <div class="rank-card rank-card-green">
-
-                                        <span class="rank-icon">
-                                            ⚑
-                                        </span>
-
-                                        <div>
-
-                                            <small>
-                                                NEXT RANK
-                                            </small>
-
-                                            <strong>
-                                                Trailblazer
-                                            </strong>
-
-                                            <span>
-                                                38 score left
-                                            </span>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="milestone-card">
-
-                                    <div class="milestone-ring">
-
-                                        <strong>
-                                            62%
-                                        </strong>
-
-                                    </div>
-
-                                    <div class="milestone-copy">
-
-                                        <small>
-                                            NEXT MILESTONE
-                                        </small>
-
-                                        <strong>
-                                            Pathfinder Rank
-                                        </strong>
-
-                                        <span>
-                                            62 / 100 Explorer Score
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="fake-tab-bar">
-
-                                    <span>
-                                        Map
-                                    </span>
-
-                                    <span class="tab-active">
-                                        My List
-                                    </span>
-
-                                    <span>
-                                        Feed
-                                    </span>
-
-                                    <span>
-                                        Friends
-                                    </span>
-
-                                    <span>
-                                        Profile
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- RIGHT PHONE — PROFILE -->
-
-                    <article class="phone phone-right">
-
-                        <div class="phone-body">
-
-                            <div class="phone-side-button phone-side-button-one"></div>
-
-                            <div class="phone-side-button phone-side-button-two"></div>
-
-                            <div class="dynamic-island"></div>
-
-
-                            <div class="phone-screen profile-app-screen">
-
-                                <div class="app-status-bar">
-
-                                    <span>
-                                        10:26
-                                    </span>
-
-                                    <span class="status-icons">
-                                        ● ◒ 79
-                                    </span>
-
-                                </div>
-
-
-                                <div class="profile-app-header">
-
-                                    <div class="profile-app-logo">
-
-                                        <span class="mini-mountain">
-                                            ▲
-                                        </span>
-
-                                        <strong>
-                                            XPLOR
-                                        </strong>
-
-                                    </div>
-
-                                    <span class="settings-button">
-                                        ⚙
-                                    </span>
-
-                                </div>
-
-
-                                <div class="profile-card">
-
-                                    <div class="profile-card-bg"></div>
-
-                                    <div class="profile-card-content">
-
-                                        <div class="profile-avatar-wrap">
-
-                                            <div class="profile-avatar-image">
-
-                                                <span>
-                                                    H
-                                                </span>
-
-                                            </div>
-
-                                            <div class="profile-percent">
-                                                76%
-                                            </div>
-
-                                        </div>
-
-
-                                        <div class="profile-copy">
-
-                                            <strong class="profile-name">
-                                                Harry
-                                            </strong>
-
-                                            <span class="profile-role">
-                                                ● Outdoor Creator
-                                            </span>
-
-                                            <span class="profile-handle">
-                                                @xplorharry
-                                            </span>
-
-                                            <p>
-                                                UK peaks, wild camps and route-ready kit.
-                                                Tracking the best places to explore next.
-                                            </p>
-
-                                        </div>
-
-
-                                        <div class="profile-tags">
-
-                                            <span>
-                                                Essex, UK
-                                            </span>
-
-                                            <span class="profile-tag-green">
-                                                Open to hikes
-                                            </span>
-
-                                        </div>
-
-
-                                        <div class="plus-badge">
-                                            ♛ XPLOR PLUS MEMBER
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="profile-stat-card">
-
-                                    <div>
-
-                                        <span class="profile-stat-icon green">
-                                            ▲
-                                        </span>
-
-                                        <strong>
-                                            56
-                                        </strong>
-
-                                        <small>
-                                            Summits
-                                        </small>
-
-                                    </div>
-
-
-                                    <div>
-
-                                        <span class="profile-stat-icon blue">
-                                            ∿
-                                        </span>
-
-                                        <strong>
-                                            318
-                                        </strong>
-
-                                        <small>
-                                            Miles
-                                        </small>
-
-                                    </div>
-
-
-                                    <div>
-
-                                        <span class="profile-stat-icon orange">
-                                            ↗
-                                        </span>
-
-                                        <strong>
-                                            18.7K
-                                        </strong>
-
-                                        <small>
-                                            Metres
-                                        </small>
-
-                                    </div>
-
-
-                                    <div>
-
-                                        <span class="profile-stat-icon gold">
-                                            ◈
-                                        </span>
-
-                                        <strong>
-                                            24
-                                        </strong>
-
-                                        <small>
-                                            Badges
-                                        </small>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="profile-progress-card">
-
-                                    <div class="profile-progress-heading">
-
-                                        <strong>
-                                            Explorer Progress
-                                        </strong>
-
-                                        <span>
-                                            View all
-                                        </span>
-
-                                    </div>
-
-
-                                    <div class="profile-progress-content">
-
-                                        <div class="profile-progress-circle">
-
-                                            <strong>
-                                                76%
-                                            </strong>
-
-                                            <span>
-                                                Overall
-                                            </span>
-
-                                        </div>
-
-
-                                        <div class="profile-bars">
-
-                                            <div>
-
-                                                <span>
-                                                    Summits completed
-                                                </span>
-
-                                                <div class="profile-bar">
-                                                    <i style="width: 76%;"></i>
-                                                </div>
-
-                                            </div>
-
-
-                                            <div>
-
-                                                <span>
-                                                    Distance travelled
-                                                </span>
-
-                                                <div class="profile-bar">
-                                                    <i style="width: 64%;"></i>
-                                                </div>
-
-                                            </div>
-
-
-                                            <div>
-
-                                                <span>
-                                                    Badges earned
-                                                </span>
-
-                                                <div class="profile-bar">
-                                                    <i style="width: 58%;"></i>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="fake-tab-bar">
-
-                                    <span>
-                                        Map
-                                    </span>
-
-                                    <span>
-                                        My List
-                                    </span>
-
-                                    <span>
-                                        Feed
-                                    </span>
-
-                                    <span>
-                                        Friends
-                                    </span>
-
-                                    <span class="tab-active">
-                                        Profile
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
+                <div class="map-stats">
+                  <span><b>108</b> FOUND</span>
+                  <span><b>1</b> DONE</span>
+                  <span><b>0</b> SAVED</span>
                 </div>
 
+                <div class="map-canvas">
+                  <div class="land land1"></div>
+                  <div class="land land2"></div>
+                  <div class="land land3"></div>
+                  <i class="pin pin1">+9</i>
+                  <i class="pin pin2">+3</i>
+                  <i class="pin pin3">+12</i>
+                  <i class="pin pin4">●</i>
+                  <small class="label label1">Scotland</small>
+                  <small class="label label2">Wales</small>
+                </div>
+
+                <div class="mission-card">
+                  <div><small>NEXT MISSION</small><strong>Yr Wyddfa</strong></div>
+                  <span>1,085m</span>
+                </div>
+
+                <div class="tabbar">
+                  <span class="active">Map</span><span>My List</span><span>Feed</span><span>Friends</span><span>Profile</span>
+                </div>
+              </div>
             </div>
+          </article>
 
-
-            <a
-                href="#discover"
-                class="scroll-indicator"
-            >
-
-                <span>
-                    SCROLL TO XPLOR
-                </span>
-
-                <i></i>
-
-            </a>
-
-        </section>
-
-
-        <!-- ==================================================
-             DISCOVER SECTION
-        =================================================== -->
-
-        <section
-            class="discover-section"
-            id="discover"
-        >
-
-            <div class="section-orbit section-orbit-one"></div>
-
-            <div class="section-orbit section-orbit-two"></div>
-
-
-            <div class="discover-inner">
-
-                <div class="section-copy">
-
-                    <p class="section-eyebrow">
-                        BUILT FOR EXPLORERS
-                    </p>
-
-                    <h2>
-
-                        Discover what
-
-                        <span>
-                            others miss.
-                        </span>
-
-                    </h2>
-
-                    <p>
-                        Go beyond the obvious routes. XPLOR brings together
-                        summits, waterfalls, caves, scrambles, wild camps and
-                        hidden outdoor locations inside one premium adventure platform.
-                    </p>
-
+          <article class="phone phone-centre">
+            <div class="phone-shell">
+              <div class="island"></div>
+              <div class="screen list-screen">
+                <div class="status"><span>10:26</span><span>● ◒ 79</span></div>
+                <div class="screen-header">
+                  <div class="screen-logo">▲ <strong>XPLOR</strong></div>
+                  <span>⌕ ☷</span>
                 </div>
 
+                <div class="list-hero">
+                  <small>MY LIST</small>
+                  <strong>28%</strong>
+                  <span>UK EXPLORED</span>
 
-                <div class="discover-grid">
+                  <div class="mini-ring">
+                    <div><b>28%</b><small>PROGRESS</small></div>
+                  </div>
 
-                    <article class="discover-card discover-card-large">
-
-                        <div class="discover-card-glow"></div>
-
-                        <div class="discover-card-top">
-
-                            <span class="discover-number">
-                                01
-                            </span>
-
-                            <span class="discover-card-icon">
-                                ◇
-                            </span>
-
-                        </div>
-
-                        <div class="discover-card-copy">
-
-                            <small>
-                                FIND NEW PLACES
-                            </small>
-
-                            <h3>
-                                Explore the whole UK.
-                            </h3>
-
-                            <p>
-                                Search by region, adventure type, elevation,
-                                difficulty and what you want to discover next.
-                            </p>
-
-                        </div>
-
-                        <div class="discover-mini-map">
-
-                            <span class="mini-map-pin mini-map-pin-one"></span>
-
-                            <span class="mini-map-pin mini-map-pin-two"></span>
-
-                            <span class="mini-map-pin mini-map-pin-three"></span>
-
-                            <div class="mini-map-path"></div>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="discover-card">
-
-                        <div class="discover-card-top">
-
-                            <span class="discover-number">
-                                02
-                            </span>
-
-                            <span class="discover-card-icon green-icon">
-                                ✓
-                            </span>
-
-                        </div>
-
-                        <div class="discover-card-copy">
-
-                            <small>
-                                TRACK PROGRESS
-                            </small>
-
-                            <h3>
-                                Build your adventure record.
-                            </h3>
-
-                            <p>
-                                Complete locations, earn badges and see your
-                                progress grow across every region.
-                            </p>
-
-                        </div>
-
-                        <div class="card-progress-widget">
-
-                            <div class="card-progress-ring">
-
-                                <strong>
-                                    76%
-                                </strong>
-
-                            </div>
-
-                            <div>
-
-                                <small>
-                                    UK PROGRESS
-                                </small>
-
-                                <strong>
-                                    142 complete
-                                </strong>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="discover-card">
-
-                        <div class="discover-card-top">
-
-                            <span class="discover-number">
-                                03
-                            </span>
-
-                            <span class="discover-card-icon gold-icon">
-                                ✦
-                            </span>
-
-                        </div>
-
-                        <div class="discover-card-copy">
-
-                            <small>
-                                EARN REWARDS
-                            </small>
-
-                            <h3>
-                                Turn exploring into progress.
-                            </h3>
-
-                            <p>
-                                Unlock ranks, achievements and milestones
-                                as your outdoor story develops.
-                            </p>
-
-                        </div>
-
-                        <div class="achievement-widget">
-
-                            <span>
-                                ◈
-                            </span>
-
-                            <div>
-
-                                <small>
-                                    LATEST BADGE
-                                </small>
-
-                                <strong>
-                                    Mountain Hunter
-                                </strong>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
+                  <div class="mini-grid">
+                    <div><i class="green">✓</i><b>36</b><small>Done</small></div>
+                    <div><i class="blue">◫</i><b>8</b><small>Planned</small></div>
+                    <div><i class="gold">◆</i><b>14</b><small>Saved</small></div>
+                    <div><i class="purple">◉</i><b>5</b><small>Regions</small></div>
+                  </div>
                 </div>
 
-            </div>
-
-        </section>
-
-
-        <!-- ==================================================
-             FEATURES SECTION
-        =================================================== -->
-
-        <section
-            class="features-section"
-            id="features"
-        >
-
-            <div class="features-header">
-
-                <p class="section-eyebrow">
-                    ONE APP. EVERY ADVENTURE.
-                </p>
-
-                <h2>
-                    Everything you need
-                    <span>to explore more.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="features-track">
-
-                <article class="feature-card">
-
-                    <span class="feature-card-number">
-                        01
-                    </span>
-
-                    <div class="feature-icon feature-icon-green">
-                        ▲
-                    </div>
-
-                    <h3>
-                        Summits
-                    </h3>
-
-                    <p>
-                        Find mountains, peaks and proper UK summit markers.
-                    </p>
-
-                </article>
-
-
-                <article class="feature-card">
-
-                    <span class="feature-card-number">
-                        02
-                    </span>
-
-                    <div class="feature-icon feature-icon-blue">
-                        ≋
-                    </div>
-
-                    <h3>
-                        Waterfalls
-                    </h3>
-
-                    <p>
-                        Discover famous falls and hidden places worth the journey.
-                    </p>
-
-                </article>
-
-
-                <article class="feature-card">
-
-                    <span class="feature-card-number">
-                        03
-                    </span>
-
-                    <div class="feature-icon feature-icon-purple">
-                        ◉
-                    </div>
-
-                    <h3>
-                        Caves
-                    </h3>
-
-                    <p>
-                        Track natural caves, underground routes and remote locations.
-                    </p>
-
-                </article>
-
-
-                <article class="feature-card">
-
-                    <span class="feature-card-number">
-                        04
-                    </span>
-
-                    <div class="feature-icon feature-icon-orange">
-                        ↗
-                    </div>
-
-                    <h3>
-                        Scrambles
-                    </h3>
-
-                    <p>
-                        Find routes that add challenge, exposure and excitement.
-                    </p>
-
-                </article>
-
-
-                <article class="feature-card">
-
-                    <span class="feature-card-number">
-                        05
-                    </span>
-
-                    <div class="feature-icon feature-icon-gold">
-                        ✦
-                    </div>
-
-                    <h3>
-                        Achievements
-                    </h3>
-
-                    <p>
-                        Earn XP, unlock badges and build your explorer profile.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- ==================================================
-             PROGRESS SECTION
-        =================================================== -->
-
-        <section
-            class="progress-section"
-            id="progress"
-        >
-
-            <div class="progress-background-word">
-                XPLOR
-            </div>
-
-
-            <div class="progress-section-inner">
-
-                <div class="progress-section-copy">
-
-                    <p class="section-eyebrow">
-                        YOUR ADVENTURE RECORD
-                    </p>
-
-                    <h2>
-                        Every place adds
-                        <span>to your story.</span>
-                    </h2>
-
-                    <p>
-                        XPLOR turns every completed summit, route and hidden
-                        location into a permanent record of what you have achieved.
-                    </p>
-
-
-                    <div class="progress-feature-list">
-
-                        <div>
-
-                            <span>
-                                ✓
-                            </span>
-
-                            <p>
-                                Complete and save locations
-                            </p>
-
-                        </div>
-
-
-                        <div>
-
-                            <span>
-                                ↗
-                            </span>
-
-                            <p>
-                                Track distance and elevation
-                            </p>
-
-                        </div>
-
-
-                        <div>
-
-                            <span>
-                                ✦
-                            </span>
-
-                            <p>
-                                Earn ranks and achievements
-                            </p>
-
-                        </div>
-
-                    </div>
-
+                <div class="rank-row">
+                  <div><span>✦</span><small>EXPLORER SCORE</small><b>62</b></div>
+                  <div><span>⚑</span><small>NEXT RANK</small><b>Trailblazer</b></div>
                 </div>
 
-
-                <div class="progress-dashboard">
-
-                    <div class="dashboard-top">
-
-                        <div>
-
-                            <small>
-                                OVERALL UK PROGRESS
-                            </small>
-
-                            <strong>
-                                28%
-                            </strong>
-
-                        </div>
-
-                        <span class="dashboard-change">
-                            +4.2% this month
-                        </span>
-
-                    </div>
-
-
-                    <div class="dashboard-main">
-
-                        <div class="dashboard-ring">
-
-                            <div class="dashboard-ring-inner">
-
-                                <strong>
-                                    142
-                                </strong>
-
-                                <span>
-                                    COMPLETED
-                                </span>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="dashboard-bars">
-
-                            <div class="dashboard-bar-row">
-
-                                <div>
-
-                                    <span>
-                                        Summits
-                                    </span>
-
-                                    <strong>
-                                        56
-                                    </strong>
-
-                                </div>
-
-                                <div class="dashboard-bar">
-
-                                    <i style="width: 78%;"></i>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="dashboard-bar-row">
-
-                                <div>
-
-                                    <span>
-                                        Waterfalls
-                                    </span>
-
-                                    <strong>
-                                        18
-                                    </strong>
-
-                                </div>
-
-                                <div class="dashboard-bar">
-
-                                    <i style="width: 52%;"></i>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="dashboard-bar-row">
-
-                                <div>
-
-                                    <span>
-                                        Caves
-                                    </span>
-
-                                    <strong>
-                                        12
-                                    </strong>
-
-                                </div>
-
-                                <div class="dashboard-bar">
-
-                                    <i style="width: 39%;"></i>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="dashboard-bar-row">
-
-                                <div>
-
-                                    <span>
-                                        Scrambles
-                                    </span>
-
-                                    <strong>
-                                        8
-                                    </strong>
-
-                                </div>
-
-                                <div class="dashboard-bar">
-
-                                    <i style="width: 31%;"></i>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="dashboard-bottom">
-
-                        <div>
-
-                            <strong>
-                                318
-                            </strong>
-
-                            <span>
-                                Miles tracked
-                            </span>
-
-                        </div>
-
-
-                        <div>
-
-                            <strong>
-                                18.7K
-                            </strong>
-
-                            <span>
-                                Metres climbed
-                            </span>
-
-                        </div>
-
-
-                        <div>
-
-                            <strong>
-                                24
-                            </strong>
-
-                            <span>
-                                Badges earned
-                            </span>
-
-                        </div>
-
-                    </div>
-
+                <div class="milestone">
+                  <div class="score-ring">62%</div>
+                  <div><small>NEXT MILESTONE</small><strong>Pathfinder Rank</strong><span>62 / 100 Explorer Score</span></div>
                 </div>
 
+                <div class="tabbar">
+                  <span>Map</span><span class="active">My List</span><span>Feed</span><span>Friends</span><span>Profile</span>
+                </div>
+              </div>
             </div>
+          </article>
 
-        </section>
-
-
-        <!-- ==================================================
-             COMMUNITY SECTION
-        =================================================== -->
-
-        <section
-            class="community-section"
-            id="community"
-        >
-
-            <div class="community-glow"></div>
-
-
-            <div class="community-inner">
-
-                <div class="community-copy">
-
-                    <p class="section-eyebrow">
-                        THE XPLOR COMMUNITY
-                    </p>
-
-                    <h2>
-                        Explore alone.
-                        <span>Never feel alone.</span>
-                    </h2>
-
-                    <p>
-                        Follow friends, share completed adventures and see where
-                        the outdoor community is heading next.
-                    </p>
-
+          <article class="phone phone-right">
+            <div class="phone-shell">
+              <div class="island"></div>
+              <div class="screen profile-screen">
+                <div class="status"><span>10:26</span><span>● ◒ 79</span></div>
+                <div class="screen-header">
+                  <div class="screen-logo">▲ <strong>XPLOR</strong></div>
+                  <span>⚙</span>
                 </div>
 
-
-                <div class="community-board">
-
-                    <div class="community-board-header">
-
-                        <div>
-
-                            <small>
-                                CAMPFIRE CIRCLE
-                            </small>
-
-                            <strong>
-                                Your adventure crew
-                            </strong>
-
-                        </div>
-
-                        <span class="online-pill">
-                            4 online
-                        </span>
-
-                    </div>
-
-
-                    <div class="community-avatars">
-
-                        <div class="community-person person-one">
-
-                            <span>
-                                B
-                            </span>
-
-                            <strong>
-                                Bryan
-                            </strong>
-
-                            <small>
-                                Online
-                            </small>
-
-                        </div>
-
-
-                        <div class="community-person person-two">
-
-                            <span>
-                                S
-                            </span>
-
-                            <strong>
-                                Sophie
-                            </strong>
-
-                            <small>
-                                Online
-                            </small>
-
-                        </div>
-
-
-                        <div class="community-person person-three">
-
-                            <span>
-                                A
-                            </span>
-
-                            <strong>
-                                Alex
-                            </strong>
-
-                            <small>
-                                Planning
-                            </small>
-
-                        </div>
-
-
-                        <div class="community-person person-four">
-
-                            <span>
-                                M
-                            </span>
-
-                            <strong>
-                                Megan
-                            </strong>
-
-                            <small>
-                                Away
-                            </small>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="community-activity">
-
-                        <div>
-
-                            <span class="activity-icon">
-                                ✓
-                            </span>
-
-                            <p>
-                                Bryan completed Snowdon Horseshoe
-                            </p>
-
-                            <small>
-                                1h
-                            </small>
-
-                        </div>
-
-
-                        <div>
-
-                            <span class="activity-icon">
-                                ↗
-                            </span>
-
-                            <p>
-                                Sophie planned a weekend in Brecon
-                            </p>
-
-                            <small>
-                                2h
-                            </small>
-
-                        </div>
-
-
-                        <div>
-
-                            <span class="activity-icon">
-                                ✦
-                            </span>
-
-                            <p>
-                                Megan earned Mountain Hunter
-                            </p>
-
-                            <small>
-                                3h
-                            </small>
-
-                        </div>
-
-                    </div>
-
+                <div class="profile-card">
+                  <div class="avatar-wrap">
+                    <div class="avatar">H</div>
+                    <span>76%</span>
+                  </div>
+                  <h3>Harry</h3>
+                  <em>● Outdoor Creator</em>
+                  <b>@xplorharry</b>
+                  <p>UK peaks, wild camps and route-ready kit. Tracking the best places to explore next.</p>
+                  <div class="profile-tags"><span>Essex, UK</span><span>Open to hikes</span></div>
+                  <strong class="plus">♛ XPLOR PLUS MEMBER</strong>
                 </div>
 
+                <div class="profile-stats">
+                  <div><i class="green">▲</i><b>56</b><small>Summits</small></div>
+                  <div><i class="blue">∿</i><b>318</b><small>Miles</small></div>
+                  <div><i class="orange">↗</i><b>18.7K</b><small>Metres</small></div>
+                  <div><i class="gold">◈</i><b>24</b><small>Badges</small></div>
+                </div>
+
+                <div class="profile-progress">
+                  <div class="profile-progress-title"><b>Explorer Progress</b><span>View all</span></div>
+                  <div class="profile-progress-body">
+                    <div class="profile-ring"><b>76%</b><small>Overall</small></div>
+                    <div class="profile-bars">
+                      <div><span>Summits completed</span><i><b style="width:76%"></b></i></div>
+                      <div><span>Distance travelled</span><i><b style="width:64%"></b></i></div>
+                      <div><span>Badges earned</span><i><b style="width:58%"></b></i></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tabbar">
+                  <span>Map</span><span>My List</span><span>Feed</span><span>Friends</span><span class="active">Profile</span>
+                </div>
+              </div>
             </div>
+          </article>
+        </div>
+      </div>
 
-        </section>
+      <a href="#discover" class="scroll-cue"><span>SCROLL TO XPLOR</span><i></i></a>
+    </section>
 
+    <section class="section discover" id="discover">
+      <div class="section-orbit orbit1"></div>
+      <div class="section-orbit orbit2"></div>
 
-        <!-- ==================================================
-             DOWNLOAD SECTION
-        =================================================== -->
+      <div class="section-wrap">
+        <div class="section-heading reveal">
+          <p class="eyebrow">THE UK IS ONE GIANT CHECKLIST</p>
+          <h2>Discover what <span>others miss.</span></h2>
+          <p>
+            Put the UK's summits, waterfalls, caves, scrambles, wild camps and hidden places in one visual map.
+            Find new adventures nearby and build a clear record of everything you've completed.
+          </p>
+        </div>
 
-        <section
-            class="download-section"
-            id="download"
-        >
-
-            <div class="download-glow"></div>
-
-            <div class="download-inner">
-
-                <p class="section-eyebrow">
-                    COMING TO IPHONE
-                </p>
-
-                <h2>
-                    The UK is waiting.
-                </h2>
-
-                <p>
-                    Discover more places. Complete more adventures.
-                    Build the outdoor story you will never forget.
-                </p>
-
-
-                <div class="download-actions">
-
-                    <a
-                        href="#top"
-                        class="primary-button magnetic-button"
-                    >
-
-                        <span class="primary-button-shine"></span>
-
-                        <span class="primary-button-content">
-
-                            Join XPLOR
-
-                            <span class="button-arrow">
-                                ↗
-                            </span>
-
-                        </span>
-
-                    </a>
-
-
-                    <div class="app-store-placeholder">
-
-                        <span class="apple-mark">
-                            ●
-                        </span>
-
-                        <div>
-
-                            <small>
-                                COMING SOON ON THE
-                            </small>
-
-                            <strong>
-                                App Store
-                            </strong>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+        <div class="discover-grid">
+          <article class="feature-panel feature-panel-large reveal tilt">
+            <div class="panel-top"><span>01</span><i>◇</i></div>
+            <div class="panel-copy">
+              <small>FIND NEW PLACES</small>
+              <h3>See the UK differently.</h3>
+              <p>Browse locations visually instead of searching through scattered lists, notes and screenshots.</p>
             </div>
+            <div class="mini-map">
+              <i class="dot d1"></i><i class="dot d2"></i><i class="dot d3"></i>
+            </div>
+          </article>
 
-        </section>
+          <article class="feature-panel reveal tilt">
+            <div class="panel-top"><span>02</span><i class="green">✓</i></div>
+            <div class="panel-copy">
+              <small>TICK IT OFF</small>
+              <h3>Build your adventure record.</h3>
+              <p>Complete locations, save plans and watch your progress grow across every region.</p>
+            </div>
+            <div class="panel-widget">
+              <div class="widget-ring">76%</div>
+              <div><small>UK PROGRESS</small><strong>142 complete</strong></div>
+            </div>
+          </article>
 
+          <article class="feature-panel reveal tilt">
+            <div class="panel-top"><span>03</span><i class="gold">✦</i></div>
+            <div class="panel-copy">
+              <small>COMPARE WITH FRIENDS</small>
+              <h3>See who has done what.</h3>
+              <p>Compare completed locations and find the places your group still needs to explore.</p>
+            </div>
+            <div class="panel-widget">
+              <div class="widget-icon">◈</div>
+              <div><small>YOUR CREW</small><strong>Six explorers connected</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <!-- ==================================================
-             FOOTER
-        =================================================== -->
+    <section class="section features" id="features">
+      <div class="section-heading reveal">
+        <p class="eyebrow">ONE APP. EVERY ADVENTURE.</p>
+        <h2>Everything you need <span>to explore more.</span></h2>
+      </div>
 
-        <footer class="site-footer">
+      <div class="feature-strip">
+        <article class="small-card reveal tilt"><span>01</span><i class="green">▲</i><h3>Summits</h3><p>Find and tick off mountains, peaks and proper UK summit markers.</p></article>
+        <article class="small-card reveal tilt"><span>02</span><i class="blue">≋</i><h3>Waterfalls</h3><p>Discover famous falls and hidden locations worth the journey.</p></article>
+        <article class="small-card reveal tilt"><span>03</span><i class="purple">◉</i><h3>Caves</h3><p>Keep a record of natural caves and underground routes.</p></article>
+        <article class="small-card reveal tilt"><span>04</span><i class="orange">↗</i><h3>Wild camps</h3><p>Record where you've camped and build a visual history.</p></article>
+        <article class="small-card reveal tilt"><span>05</span><i class="gold">✦</i><h3>Achievements</h3><p>Earn XP, unlock badges and build your explorer profile.</p></article>
+      </div>
+    </section>
 
-            <a
-                href="#top"
-                class="footer-brand"
-            >
+    <section class="section story" id="story">
+      <div class="story-lines"></div>
 
-                <span class="brand-icon">
-                    X
-                </span>
+      <div class="story-wrap">
+        <div class="story-heading reveal">
+          <p class="eyebrow">BUILT BY EXPLORERS, FOR EXPLORERS</p>
+          <h2>It was never meant <span>to become an app.</span></h2>
+        </div>
 
-                <span class="brand-word">
-                    XPLOR
-                </span>
-
-            </a>
-
-
+        <div class="story-grid">
+          <div class="story-lead reveal">
             <p>
-                Built for the places worth finding.
+              XPLOR began with six mates spending every weekend climbing summits,
+              finding caves and wild camping around the UK.
+            </p>
+            <blockquote>
+              “We just needed one place to tick everything off and see how our lists compared.”
+            </blockquote>
+          </div>
+
+          <div class="story-copy reveal">
+            <p>
+              At first we used the Notes app. Everyone had a different list, different names and different photos.
+              There was no clear way to see who had completed what, where we'd camped, which caves we'd explored
+              or what the group still had left to do.
             </p>
 
+            <p>
+              We assumed an app already existed. We searched for hours and found navigation apps, route planners and weather tools,
+              but nothing that solved the simple problem we actually had: put every location in one place, tick them off,
+              see them visually on a map and compare progress with friends.
+            </p>
 
-            <div class="footer-links">
+            <p>
+              So XPLOR started as a basic private list for the six of us. Then we kept adding more.
+              More locations. More progress. Profiles. Friends. Soon other people saw it and asked for access.
+              Then their friends wanted in too.
+            </p>
 
-                <a href="#discover">
-                    Discover
-                </a>
+            <p class="story-end">
+              What began as a tool for our weekends became the outdoor platform we couldn't find anywhere else.
+            </p>
+          </div>
+        </div>
 
-                <a href="#features">
-                    Features
-                </a>
+        <div class="story-values">
+          <div class="reveal"><strong>01</strong><span>Find every location</span></div>
+          <div class="reveal"><strong>02</strong><span>Tick off what you complete</span></div>
+          <div class="reveal"><strong>03</strong><span>Compare with friends</span></div>
+          <div class="reveal"><strong>04</strong><span>Keep the memories</span></div>
+        </div>
+      </div>
+    </section>
 
-                <a href="#community">
-                    Community
-                </a>
+    <section class="section progress" id="progress">
+      <div class="big-word">XPLOR</div>
 
+      <div class="progress-wrap">
+        <div class="progress-copy reveal">
+          <p class="eyebrow">YOUR ADVENTURE RECORD</p>
+          <h2>Every place adds <span>to your story.</span></h2>
+          <p>
+            XPLOR turns every summit, cave, waterfall, route and wild camp into a permanent record of what you've achieved.
+          </p>
+
+          <div class="tick-list">
+            <div><span>✓</span><p>Complete and save locations</p></div>
+            <div><span>↗</span><p>Track distance and elevation</p></div>
+            <div><span>✦</span><p>Earn ranks and achievements</p></div>
+          </div>
+        </div>
+
+        <div class="dashboard reveal tilt">
+          <div class="dashboard-top">
+            <div><small>OVERALL UK PROGRESS</small><strong class="count" data-value="28" data-suffix="%">28%</strong></div>
+            <span>+4.2% this month</span>
+          </div>
+
+          <div class="dashboard-main">
+            <div class="dashboard-ring"><div><strong class="count" data-value="142">142</strong><span>COMPLETED</span></div></div>
+
+            <div class="bars">
+              <div><div><span>Summits</span><strong>56</strong></div><i><b data-width="78%"></b></i></div>
+              <div><div><span>Waterfalls</span><strong>18</strong></div><i><b data-width="52%"></b></i></div>
+              <div><div><span>Caves</span><strong>12</strong></div><i><b data-width="39%"></b></i></div>
+              <div><div><span>Scrambles</span><strong>8</strong></div><i><b data-width="31%"></b></i></div>
             </div>
+          </div>
 
-        </footer>
+          <div class="dashboard-stats">
+            <div><strong class="count" data-value="318">318</strong><span>Miles tracked</span></div>
+            <div><strong class="count" data-value="18.7" data-decimal="1" data-suffix="K">18.7K</strong><span>Metres climbed</span></div>
+            <div><strong class="count" data-value="24">24</strong><span>Badges earned</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </main>
+    <section class="section community" id="community">
+      <div class="community-wrap">
+        <div class="community-copy reveal">
+          <p class="eyebrow">THE XPLOR COMMUNITY</p>
+          <h2>Explore alone. <span>Never feel alone.</span></h2>
+          <p>Follow friends, compare completed places, share adventures and see where your crew is heading next.</p>
+        </div>
 
+        <div class="community-board reveal tilt">
+          <div class="board-header">
+            <div><small>CAMPFIRE CIRCLE</small><strong>Your adventure crew</strong></div>
+            <span>4 online</span>
+          </div>
 
-    <script src="js/main.js?v=30"></script>
+          <div class="people">
+            <div><i>B</i><strong>Bryan</strong><small>Online</small></div>
+            <div><i>S</i><strong>Sophie</strong><small>Online</small></div>
+            <div><i class="blue-border">A</i><strong>Alex</strong><small class="gold">Planning</small></div>
+            <div><i class="red-border">M</i><strong>Megan</strong><small class="red">Away</small></div>
+          </div>
 
+          <div class="activity">
+            <div><span>✓</span><p>Bryan completed Snowdon Horseshoe</p><small>1h</small></div>
+            <div><span>↗</span><p>Sophie planned a weekend in Brecon</p><small>2h</small></div>
+            <div><span>✦</span><p>Megan earned Mountain Hunter</p><small>3h</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section download" id="download">
+      <div class="download-ring"></div>
+      <div class="download-copy reveal">
+        <p class="eyebrow">COMING TO IPHONE</p>
+        <h2>The UK is waiting.</h2>
+        <p>Find more places. Complete more adventures. Build the outdoor story you'll never forget.</p>
+
+        <div class="download-actions">
+          <a href="#top" class="primary-btn magnetic"><span>Join XPLOR</span><b>↗</b></a>
+          <div class="app-store"><span>●</span><div><small>COMING SOON ON THE</small><strong>App Store</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="#top" class="brand"><span class="brand-mark">X</span><span class="brand-name">XPLOR</span></a>
+      <p>Built for the places worth finding.</p>
+      <div><a href="#discover">Discover</a><a href="#features">Features</a><a href="#story">Our Story</a><a href="#community">Community</a></div>
+    </footer>
+  </main>
+
+  <script src="js/main.js?v=40"></script>
 </body>
-
 </html>
