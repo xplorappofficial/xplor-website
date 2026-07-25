@@ -1,0 +1,24 @@
+{
+  "html_files": [
+    "community.html",
+    "download.html",
+    "features.html",
+    "index.html",
+    "roadmap.html",
+    "story.html"
+  ],
+  "css_braces_balanced": true,
+  "js_syntax": "passed",
+  "required_files": [
+    "index.html",
+    "features.html",
+    "story.html",
+    "community.html",
+    "roadmap.html",
+    "download.html",
+    "css/style.css",
+    "js/main.js",
+    "robots.txt",
+    "sitemap.xml"
+  ]
+}
