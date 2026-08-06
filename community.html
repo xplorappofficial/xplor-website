@@ -1,302 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#020503">
-
-    <title>XPLOR Community — Compare Adventures With Friends</title>
-    <meta name="description" content="Follow friends, compare completed UK summits and adventure locations, share progress and plan what your crew explores next.">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css?v=44">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#020503">
+  <title>XPLOR Community — Compare Adventures With Friends</title>
+  <meta name="description" content="Follow friends, compare UK adventure progress, share achievements and plan what your crew explores next.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://xplorappofficial.co.uk/community.html">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta property="og:title" content="XPLOR Community — Compare Adventures With Friends">
+  <meta property="og:description" content="Follow friends, compare UK adventure progress, share achievements and plan what your crew explores next.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xplorappofficial.co.uk/community.html">
+  <meta property="og:site_name" content="XPLOR">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=102">
+  
 </head>
-
 <body>
 
-    <header class="site-header" id="siteHeader">
-        <div class="nav-container">
+<svg class="icon-sprite" aria-hidden="true" focusable="false">
+  <symbol id="icon-instagram" viewBox="0 0 24 24">
+    <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="17.4" cy="6.7" r="1.1" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-apple" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M17.1 12.5c0-2.7 2.2-4 2.3-4.1-1.3-1.9-3.3-2.1-4-2.1-1.7-.2-3.3 1-4.1 1-.8 0-2.1-1-3.5-1-1.8 0-3.5 1.1-4.5 2.7-1.9 3.3-.5 8.2 1.4 10.8.9 1.3 2 2.8 3.4 2.7 1.4-.1 1.9-.9 3.6-.9 1.7 0 2.2.9 3.7.9s2.4-1.3 3.3-2.6c1-1.5 1.5-3 1.5-3.1-.1 0-3.1-1.2-3.1-4.3ZM14.3 4.6c.7-.9 1.2-2.1 1.1-3.3-1.1 0-2.5.8-3.3 1.7-.7.8-1.3 2-1.1 3.2 1.2.1 2.5-.6 3.3-1.6Z"/>
+  </symbol>
+</svg>
 
-            <a href="index.html" class="brand" aria-label="XPLOR home">
-                <span class="brand-icon">X</span>
-                <span class="brand-word">XPLOR</span>
-            </a>
-
-            <nav class="desktop-navigation" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="features.html">Features</a>
-    <a href="story.html">Our Story</a>
-    <a href="community.html">Community</a>
-    <a href="roadmap.html">Roadmap</a>
+  <div class="global-noise"></div>
+  <div class="global-glow global-glow-a"></div>
+  <div class="global-glow global-glow-b"></div>
+  
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="index.html" aria-label="XPLOR home">
+    <img src="images/xplor-logo.png" alt="XPLOR">
+  </a>
+  
+<nav class="desktop-nav" aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="story.html">Our Story</a>
+  <a href="community.html">Community</a>
+  <a href="plus.html">XPLOR Plus</a>
+  <a href="roadmap.html">Roadmap</a>
+  <a href="compare.html">Compare</a>
+  <a href="stats.html">UK Stats</a>
 </nav>
 
-            <a href="download.html" class="header-button">
-                Coming to iOS
-            </a>
+  <div class="header-actions">
+    <a class="instagram-nav" href="https://www.instagram.com/xplorappofficial" target="_blank" rel="noopener"><svg><use href="#icon-instagram"></use></svg><span>Instagram</span></a>
+    <a class="nav-cta" href="download.html"><svg><use href="#icon-apple"></use></svg><span>Coming to iOS</span></a>
+    <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
 
-            <button
-                class="menu-button"
-                id="menuButton"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-            >
-                <span></span>
-                <span></span>
-            </button>
-
-        </div>
-    </header>
-
-    <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html">Home</a>
-    <a href="features.html">Features</a>
-    <a href="story.html">Our Story</a>
-    <a href="community.html">Community</a>
-    <a href="roadmap.html">Roadmap</a>
-    <a href="download.html" class="mobile-menu-download">Coming to iOS</a>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="story.html">Our Story</a>
+  <a href="community.html">Community</a>
+  <a href="plus.html">XPLOR Plus</a>
+  <a href="roadmap.html">Roadmap</a>
+  <a href="compare.html">Compare Apps</a>
+  <a href="stats.html">UK Stats</a>
+  <a href="https://www.instagram.com/xplorappofficial" target="_blank" rel="noopener"><svg class="inline-icon"><use href="#icon-instagram"></use></svg><span>Instagram</span></a>
+  <a href="download.html" class="mobile-highlight">Coming to iOS</a>
 </div>
 
-    <main>
 
-        <section class="v4-page-hero">
-
-            <div class="v4-page-grid"></div>
-            <div class="v4-page-orbit v4-page-orbit-one"></div>
-            <div class="v4-page-orbit v4-page-orbit-two"></div>
-            <div class="v4-page-glow"></div>
-
-            <div class="v4-page-hero-inner">
-
-                <p class="section-eyebrow">
-                    THE XPLOR COMMUNITY
-                </p>
-
-                <h1>
-                    Your adventures.
-                    <span>Your people.</span>
-                </h1>
-
-                <p>
-                    A social outdoor platform centred on real completions, shared memories and the places still waiting.
-                </p>
-
-            </div>
-
-        </section>
-
-        
-<section class="v4-content-section">
-
-    <div class="v4-content-wrap">
-
-        <div class="v4-split-heading">
-
-            <div>
-                <p class="section-eyebrow">SOCIAL, WITHOUT THE NOISE</p>
-
-                <h2>
-                    Built around
-                    real adventures.
-                </h2>
-            </div>
-
-            <p>
-                XPLOR is not about perfect photos and fake lifestyles. It is
-                about the places you completed, the mates you did them with and
-                what you are planning next.
-            </p>
-
-        </div>
-
-        <div class="v4-social-showcase">
-
-            <article class="v4-social-feed-card v4-reveal">
-
-                <div class="v4-social-user">
-                    <i>B</i>
-                    <div>
-                        <strong>Bryan</strong>
-                        <span>Lake District · 1h</span>
-                    </div>
-                    <b>•••</b>
-                </div>
-
-                <div class="v4-social-photo">
-                    <span>HELVELLYN RIDGE</span>
-                </div>
-
-                <div class="v4-social-actions">
-                    <span>♡ 248</span>
-                    <span>◯ 18</span>
-                    <span>↗ Share</span>
-                </div>
-
-                <p>
-                    <strong>Bryan</strong>
-                    Summit 42 done. Windy, wet and completely worth it.
-                </p>
-
-            </article>
-
-            <div class="v4-community-stack">
-
-                <article class="v4-leader-card v4-reveal">
-
-                    <span class="v4-card-kicker">CREW LEADERBOARD</span>
-
-                    <div>
-                        <b>1</b>
-                        <i>H</i>
-                        <strong>Harry</strong>
-                        <span>142 complete</span>
-                    </div>
-
-                    <div>
-                        <b>2</b>
-                        <i>B</i>
-                        <strong>Bryan</strong>
-                        <span>137 complete</span>
-                    </div>
-
-                    <div>
-                        <b>3</b>
-                        <i>S</i>
-                        <strong>Sophie</strong>
-                        <span>119 complete</span>
-                    </div>
-
-                </article>
-
-                <article class="v4-challenge-card v4-reveal">
-
-                    <span class="v4-card-kicker">WEEKEND CHALLENGE</span>
-
-                    <h3>
-                        Complete two new summits
-                    </h3>
-
-                    <div class="v4-challenge-progress">
-                        <i></i>
-                    </div>
-
-                    <p>
-                        1 of 2 completed · 2 days remaining
-                    </p>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </div>
-
+  <main>
+    
+<section class="page-hero ">
+  <div class="page-grid"></div>
+  <div class="page-contour contour-a"></div>
+  <div class="page-contour contour-b"></div>
+  <div class="page-hero-inner reveal">
+    <p class="eyebrow">THE XPLOR COMMUNITY</p>
+    <h1>Your adventures.<span>Your people.</span></h1>
+    <p>A social outdoor platform centred on real completions, shared memories and what your crew explores next.</p>
+  </div>
 </section>
 
-<section class="v4-content-section v4-dark-shift">
-
-    <div class="v4-content-wrap">
-
-        <div class="section-copy">
-
-            <p class="section-eyebrow">YOUR CREW, YOUR PROGRESS</p>
-
-            <h2>
-                Compare the journey,
-                <span>not just the numbers.</span>
-            </h2>
-
-            <p>
-                Open a friend's profile and see shared locations, completed
-                regions, achievements and the adventures you still have left to
-                do together.
-            </p>
-
-        </div>
-
-        <div class="v4-compare-board v4-reveal">
-
-            <div class="v4-compare-person">
-                <i>H</i>
-                <h3>Harry</h3>
-                <strong>76%</strong>
-                <span>UK explored</span>
-            </div>
-
-            <div class="v4-versus">VS</div>
-
-            <div class="v4-compare-person">
-                <i>B</i>
-                <h3>Bryan</h3>
-                <strong>69%</strong>
-                <span>UK explored</span>
-            </div>
-
-            <div class="v4-compare-stats">
-
-                <div>
-                    <span>Shared summits</span>
-                    <strong>31</strong>
-                </div>
-
-                <div>
-                    <span>Places only you completed</span>
-                    <strong>18</strong>
-                </div>
-
-                <div>
-                    <span>Saved by both</span>
-                    <strong>12</strong>
-                </div>
-
-            </div>
-
-        </div>
-
+<section class="content-section">
+  <div class="content-wrap community-layout">
+    <article class="large-feed reveal">
+      <div class="feed-user"><i>S</i><div><strong>Sophie</strong><span>Snowdonia · 42m</span></div><b>•••</b></div>
+      <div class="large-feed-image"><span>TRYFAN<br>COMPLETE.</span></div>
+      <div class="feed-actions"><span>♡ 392</span><span>◯ 31</span><span>↗ Share</span></div>
+      <p><strong>Sophie</strong> One summit closer. Wet rock, zero visibility, brilliant day.</p>
+    </article>
+    <div class="community-side">
+      <article class="leaderboard reveal"><p class="eyebrow">CREW LEADERBOARD</p><div><b>1</b><i>H</i><strong>Harry</strong><span>142</span></div><div><b>2</b><i>B</i><strong>Bryan</strong><span>137</span></div><div><b>3</b><i>S</i><strong>Sophie</strong><span>119</span></div></article>
+      <article class="challenge reveal"><p class="eyebrow">WEEKEND CHALLENGE</p><h2>Complete two new summits.</h2><div class="challenge-bar"><i></i></div><span>1 of 2 complete · 2 days left</span></article>
+      <article class="crew-chat reveal"><p class="eyebrow">BASECAMP</p><div><i>A</i><p><strong>Alex</strong> Wales next weekend?</p></div><div><i>M</i><p><strong>Megan</strong> Added three places to the list.</p></div></article>
     </div>
-
+  </div>
 </section>
 
-
-        <section class="v4-ios-strip">
-
-            <div>
-                <p class="section-eyebrow">COMING TO IOS</p>
-                <h2>The UK is waiting.</h2>
-            </div>
-
-            <a href="download.html" class="primary-button">
-                <span class="primary-button-content">
-                    See the iOS launch
-                    <span class="button-arrow">↗</span>
-                </span>
-            </a>
-
-        </section>
-
-        <footer class="site-footer">
-    <a href="index.html" class="footer-brand" aria-label="XPLOR home">
-        <span class="brand-icon">X</span>
-        <span class="brand-word">XPLOR</span>
-    </a>
-
-    <p>Built for the places worth finding.</p>
-
-    <div class="footer-links">
-        <a href="features.html">Features</a>
-        <a href="story.html">Our Story</a>
-        <a href="community.html">Community</a>
-        <a href="download.html">Coming to iOS</a>
-    </div>
+  </main>
+  
+<footer class="site-footer">
+  <a class="footer-logo" href="index.html"><img src="images/xplor-logo.png" alt="XPLOR"></a>
+  <p>Built for the places worth finding.</p>
+  <div class="footer-links">
+    <a href="plus.html">XPLOR Plus</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="compare.html">Compare</a>
+    <a href="stats.html">UK Stats</a>
+    <a href="https://www.instagram.com/xplorappofficial" target="_blank" rel="noopener"><svg class="inline-icon"><use href="#icon-instagram"></use></svg><span>Instagram</span></a>
+  </div>
 </footer>
 
-    </main>
-
-    <script src="js/main.js?v=44"></script>
-
+  <script src="js/main.js?v=102"></script>
 </body>
 </html>
