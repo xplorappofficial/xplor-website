@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>index.html</loc></url>
-  <url><loc>features.html</loc></url>
-  <url><loc>story.html</loc></url>
-  <url><loc>community.html</loc></url>
-  <url><loc>roadmap.html</loc></url>
-  <url><loc>download.html</loc></url>
+  <url><loc>https://xplorappofficial.co.uk/</loc></url>
+  <url><loc>https://xplorappofficial.co.uk/features.html</loc></url>
+  <url><loc>https://xplorappofficial.co.uk/story.html</loc></url>
+  <url><loc>https://xplorappofficial.co.uk/community.html</loc></url>
+  <url><loc>https://xplorappofficial.co.uk/plus.html</loc></url>
+  <url><loc>https://xplorappofficial.co.uk/roadmap.html</loc></url>
+  <url><loc>https://xplorappofficial.co.uk/compare.html</loc></url>
+  <url><loc>https://xplorappofficial.co.uk/stats.html</loc></url>
+  <url><loc>https://xplorappofficial.co.uk/download.html</loc></url>
 </urlset>
