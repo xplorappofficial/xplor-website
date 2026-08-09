@@ -112,3 +112,33 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(moveAtmosphere);
   }, {passive:true});
 });
+
+document.addEventListener("DOMContentLoaded",()=>{
+ const hs=[...document.querySelectorAll(".map-hotspot")], p=document.getElementById("mapPreview");
+ if(hs.length&&p){
+  const t=p.querySelector(".map-preview-type"),h=p.querySelector("h3"),r=p.querySelector("p"),m=p.querySelector("small");
+  const set=b=>{hs.forEach(x=>x.classList.toggle("active",x===b));t.textContent=b.dataset.type;h.textContent=b.dataset.title;r.textContent=b.dataset.region;m.textContent=b.dataset.meta;p.animate([{opacity:.45,transform:"translateY(8px)"},{opacity:1,transform:"none"}],{duration:240,easing:"cubic-bezier(.16,1,.3,1)"})};
+  hs.forEach(b=>["mouseenter","focus","click"].forEach(e=>b.addEventListener(e,()=>set(b))));
+ }
+});
+
+
+/* Build 12 — Features discovery switcher */
+document.addEventListener("DOMContentLoaded",()=>{
+ const shell=document.querySelector(".b12-discovery-shell");
+ if(!shell) return;
+ const stage=shell.querySelector(".b12-discovery-stage"), img=document.getElementById("b12SceneImage"), eye=document.getElementById("b12SceneEyebrow"), title=document.getElementById("b12SceneTitle"), text=document.getElementById("b12SceneText"), count=document.getElementById("b12SceneCount");
+ const scenes={
+  summits:{img:"images/ridge-01.png",eye:"SUMMITS",title:"See the peaks worth ticking off.",text:"From famous mountain tops to proper summit markers that are easy to miss, keep the UK in one visual list.",count:"108"},
+  caves:{img:"images/cave-01.png",eye:"CAVES",title:"Go beyond the obvious trail.",text:"Keep cave entrances and underground adventures alongside everything else you explore — not buried in screenshots and Notes.",count:"42"},
+  waterfalls:{img:"images/waterfall-02.png",eye:"WATERFALLS",title:"Find the places hidden between the peaks.",text:"Waterfalls become part of the same adventure record, ready to discover, save and tick off with the rest of the UK.",count:"64"},
+  scrambles:{img:"images/scramble-02.png",eye:"SCRAMBLES",title:"Turn a ridge into the next mission.",text:"Save scrambling ideas, build a proper list and compare which ridges the crew has already completed.",count:"31"},
+  camping:{img:"images/camp-01.png",eye:"WILD CAMPS",title:"Remember where the weekend actually happened.",text:"Keep wild-camp memories and adventure planning connected to your wider XPLOR progress.",count:"27"}
+ };
+ shell.querySelectorAll(".b12-discovery-tabs button").forEach(btn=>btn.addEventListener("click",()=>{
+  const s=scenes[btn.dataset.scene]; if(!s) return;
+  shell.querySelectorAll(".b12-discovery-tabs button").forEach(b=>b.classList.toggle("active",b===btn));
+  stage.classList.add("scene-changing");
+  setTimeout(()=>{img.src=s.img;eye.textContent=s.eye;title.textContent=s.title;text.textContent=s.text;count.textContent=s.count;stage.dataset.current=btn.dataset.scene;stage.classList.remove("scene-changing")},150);
+ }));
+});
