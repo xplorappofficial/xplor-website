@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#020503">
-  <title>XPLOR Features — Summit Tracker, Caves, Waterfalls & Friends</title>
-  <meta name="description" content="Explore XPLOR features for UK summits, waterfalls, caves, wild camps, adventure progress, achievements and friends.">
+  <title>XPLOR Features — UK Summit Tracker, Waterfall Finder & Cave App</title>
+  <meta name="description" content="Explore the XPLOR UK adventure map, summit tracker, waterfall finder, cave tracking, wild camping, achievements and hiking progress with friends.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://xplorappofficial.co.uk/features.html">
   <link rel="icon" href="favicon.ico" sizes="any">
@@ -18,10 +18,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=102">
-  
+  <link rel="stylesheet" href="css/style.css?v=1200">
 </head>
-<body>
+<body class="page-features">
 
 <svg class="icon-sprite" aria-hidden="true" focusable="false">
   <symbol id="icon-instagram" viewBox="0 0 24 24">
@@ -76,41 +75,78 @@
 
 
   <main>
-    
-<section class="page-hero ">
-  <div class="page-grid"></div>
-  <div class="page-contour contour-a"></div>
-  <div class="page-contour contour-b"></div>
-  <div class="page-hero-inner reveal">
-    <p class="eyebrow">ONE APP. EVERY ADVENTURE.</p>
-    <h1>Everything you need<span>to explore more.</span></h1>
-    <p>Discover new places, complete adventures and build a record of the UK without the inner pages shouting at you.</p>
+<section class="b9-features-hero">
+  <div class="b9-features-copy reveal">
+    <p class="eyebrow">BUILT AROUND THE WAY YOU EXPLORE</p>
+    <h1>Find it.<br><span>Do it.</span><br>Tick it off.</h1>
+    <p>XPLOR brings UK summits, caves, waterfalls, scrambles, wild places and progress into one visual adventure system.</p>
+    <div class="b9-feature-pills">
+      <span>Summits</span><span>Caves</span><span>Waterfalls</span><span>Scrambles</span><span>Wild Camps</span>
+    </div>
+  </div>
+  <div class="b9-feature-screen reveal">
+    <img src="images/app-mylist.jpeg" alt="XPLOR My List screen">
   </div>
 </section>
 
-<section class="content-section">
-  <div class="content-wrap feature-story-list">
-    <article class="feature-story reveal">
-      <div class="feature-number">01</div><div class="feature-copy"><p class="eyebrow">SUMMITS</p><h2>Collect Britain's high points.</h2><p>Find mountains, peaks and proper summit markers, then track completion by region and across the UK.</p></div>
-      <div class="feature-visual summit-visual"><div class="summit-lines"></div><span class="summit-pin">▲</span><strong>917 m</strong><small>TRYFAN · WALES</small></div>
-    </article>
-    <article class="feature-story feature-story-reverse reveal">
-      <div class="feature-number">02</div><div class="feature-copy"><p class="eyebrow">BEYOND HIKING</p><h2>Waterfalls. Caves. Wild camps.</h2><p>XPLOR is designed for exploration beyond one route type, keeping different outdoor discoveries in one visual collection.</p></div>
-      <div class="feature-visual category-visual"><i>≋</i><i>◉</i><i>↗</i><span>ONE ADVENTURE MAP</span></div>
-    </article>
-    <article class="feature-story reveal">
-      <div class="feature-number">03</div><div class="feature-copy"><p class="eyebrow">PROGRESS</p><h2>See the journey grow.</h2><p>Track completed places, saved plans, elevation, distance, regions, streaks, ranks and achievements.</p></div>
-      <div class="feature-visual progress-visual"><div class="large-ring"><strong>76%</strong><span>EXPLORER PROGRESS</span></div><div class="mini-bars"><i style="--w:82%"></i><i style="--w:64%"></i><i style="--w:51%"></i></div></div>
-    </article>
-    <article class="feature-story feature-story-reverse reveal">
-      <div class="feature-number">04</div><div class="feature-copy"><p class="eyebrow">FRIENDS</p><h2>Compare the places, not just the miles.</h2><p>See shared completions, personal gaps, crew leaderboards and what everyone should explore next.</p></div>
-      <div class="feature-visual crew-visual"><div><i>H</i><strong>142</strong><span>complete</span></div><b>VS</b><div><i>B</i><strong>137</strong><span>complete</span></div></div>
-    </article>
+<section class="b12-discovery-lab" id="discovery-lab">
+  <div class="b12-discovery-head reveal">
+    <div><p class="eyebrow">THE XPLOR DISCOVERY ENGINE</p><h2>Pick the adventure.<span>XPLOR brings the places.</span></h2></div>
+    <p>No route search required. Switch adventure types and see how XPLOR turns scattered UK locations into one clean discovery experience.</p>
+  </div>
+  <div class="b12-discovery-shell reveal">
+    <div class="b12-discovery-tabs" role="tablist" aria-label="Adventure types">
+      <button class="active" data-scene="summits">▲ <span>Summits</span></button>
+      <button data-scene="caves">◉ <span>Caves</span></button>
+      <button data-scene="waterfalls">● <span>Waterfalls</span></button>
+      <button data-scene="scrambles">↗ <span>Scrambles</span></button>
+      <button data-scene="camping">✦ <span>Wild camps</span></button>
+    </div>
+    <div class="b12-discovery-stage" data-current="summits">
+      <div class="b12-stage-photo"><img id="b12SceneImage" src="images/ridge-01.png" alt="UK mountain ridge"></div>
+      <div class="b12-stage-overlay"></div>
+      <div class="b12-stage-logo"><img src="images/xplor-logo.png" alt="XPLOR"></div>
+      <div class="b12-stage-copy">
+        <p id="b12SceneEyebrow">SUMMITS</p>
+        <h3 id="b12SceneTitle">See the peaks worth ticking off.</h3>
+        <p id="b12SceneText">From famous mountain tops to the proper summit markers that are easy to miss, keep the UK in one visual list.</p>
+      </div>
+      <div class="b12-stage-stats">
+        <span><b id="b12SceneCount">108</b> PLACES</span><span><b>1</b> APP</span><span><b>6</b> MATES</span>
+      </div>
+      <div class="b12-stage-phone"><img src="images/app-mylist.jpeg" alt="XPLOR My List screen"></div>
+    </div>
+    <div class="b12-discovery-foot">
+      <span>DISCOVER</span><i></i><span>SAVE</span><i></i><span>COMPLETE</span><i></i><span>COMPARE</span>
+    </div>
   </div>
 </section>
-<section class="compact-cta reveal"><div><p class="eyebrow">UNLOCK MORE</p><h2>Take every feature further with XPLOR Plus.</h2></div><a class="button button-primary" href="plus.html">Explore Plus ↗</a></section>
+<section class="b9-feature-flow">
+  <article class="reveal">
+    <span>01</span><h3>Discover</h3>
+    <p>Open the map and instantly see what is around you — not just routes you already knew to search for.</p>
+  </article>
+  <article class="reveal">
+    <span>02</span><h3>Plan</h3>
+    <p>Save ideas, build your list and decide what the next weekend actually looks like.</p>
+  </article>
+  <article class="reveal">
+    <span>03</span><h3>Complete</h3>
+    <p>Tick locations off, build UK progress and create a permanent record of where you have been.</p>
+  </article>
+  <article class="reveal">
+    <span>04</span><h3>Compare</h3>
+    <p>See what H, Paul, Ellis, Charlie, Jake and Josh have done — and what is still waiting for the crew.</p>
+  </article>
+</section>
 
-  </main>
+<section class="b9-feature-photo-grid">
+  <figure class="reveal"><img src="images/cave-01.png" alt="UK cave"><figcaption>CAVES</figcaption></figure>
+  <figure class="reveal"><img src="images/waterfall-01.png" alt="UK waterfall"><figcaption>WATERFALLS</figcaption></figure>
+  <figure class="reveal"><img src="images/scramble-01.png" alt="UK scramble"><figcaption>SCRAMBLES</figcaption></figure>
+</section>
+
+<section class="b8-photo-break reveal" style="--img:url('../images/scramble-02.png')"><div><p class="eyebrow">RIDGES, CAVES, FALLS</p><h2>One app for the adventures that do not fit in one box.</h2></div></section></main>
   
 <footer class="site-footer">
   <a class="footer-logo" href="index.html"><img src="images/xplor-logo.png" alt="XPLOR"></a>
@@ -124,6 +160,6 @@
   </div>
 </footer>
 
-  <script src="js/main.js?v=102"></script>
+  <script src="js/main.js?v=1200"></script>
 </body>
 </html>
